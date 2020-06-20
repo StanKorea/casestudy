@@ -255,9 +255,10 @@
   stan/lib/stan_math/lib/eigen_3.3.3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
   stan/lib/stan_math/lib/eigen_3.3.3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
   stan/lib/stan_math/stan/math/rev/core.hpp \
-  stan/lib/stan_math/stan/math/rev/core/autodiffstackstorage.hpp \
-  stan/lib/stan_math/stan/math/memory/stack_alloc.hpp \
+  stan/lib/stan_math/stan/math/rev/core/accumulate_adjoints.hpp \
   stan/lib/stan_math/stan/math/prim/meta.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/ad_promotable.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/bool_constant.hpp \
   stan/lib/stan_math/stan/math/prim/meta/append_return_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/return_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/promote_args.hpp \
@@ -398,47 +399,48 @@
   stan/lib/stan_math/lib/boost_1.72.0/boost/mpl/or.hpp \
   stan/lib/stan_math/lib/boost_1.72.0/boost/mpl/aux_/preprocessed/gcc/or.hpp \
   stan/lib/stan_math/lib/boost_1.72.0/boost/mpl/not.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/base_type.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_complex.hpp \
   stan/lib/stan_math/stan/math/prim/meta/scalar_type.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/is_eigen.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/require_helpers.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/conjunction.hpp \
   stan/lib/stan_math/stan/math/prim/meta/disjunction.hpp \
   stan/lib/stan_math/stan/math/prim/meta/value_type.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_eigen.hpp \
   stan/lib/stan_math/stan/math/prim/meta/is_vector.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/bool_constant.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/ad_promotable.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/as_array_or_scalar.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/require_generics.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/is_container.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/is_fvar.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/is_string_convertible.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/is_var.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/is_var_or_arithmetic.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/conjunction.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/apply_scalar_unary.hpp \
   stan/lib/stan_math/stan/math/prim/meta/is_vector_like.hpp \
   stan/lib/stan_math/stan/math/prim/meta/is_detected.hpp \
   stan/lib/stan_math/stan/math/prim/meta/void_t.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/apply_vector_unary.hpp \
   stan/lib/stan_math/stan/math/prim/meta/as_column_vector_or_scalar.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_stan_scalar.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_fvar.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_var.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_var_or_arithmetic.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_container.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/plain_type.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/require_generics.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/as_array_or_scalar.hpp \
   stan/lib/stan_math/stan/math/prim/meta/child_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/contains_fvar.hpp \
   stan/lib/stan_math/stan/math/prim/meta/contains_std_vector.hpp \
   stan/lib/stan_math/stan/math/prim/meta/contains_vector.hpp \
   stan/lib/stan_math/stan/math/prim/meta/error_index.hpp \
   stan/lib/stan_math/stan/math/prim/meta/forward_as.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/get.hpp \
   stan/lib/stan_math/stan/math/prim/meta/include_summand.hpp \
   stan/lib/stan_math/stan/math/prim/meta/is_constant.hpp \
   stan/lib/stan_math/stan/math/prim/meta/index_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/index_apply.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_autodiff.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_double_or_int.hpp \
+  stan/lib/stan_math/stan/math/prim/meta/is_string_convertible.hpp \
   stan/lib/stan_math/stan/math/prim/meta/likely.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/max_size.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/size.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/max_size_mvt.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/size_mvt.hpp \
   stan/lib/stan_math/stan/math/prim/meta/operands_and_partials.hpp \
   stan/lib/stan_math/stan/math/prim/meta/broadcast_array.hpp \
   stan/lib/stan_math/stan/math/prim/meta/promote_scalar_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/partials_return_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/partials_type.hpp \
-  stan/lib/stan_math/stan/math/prim/meta/plain_type.hpp \
   stan/lib/stan_math/stan/math/prim/meta/scalar_seq_view.hpp \
   stan/lib/stan_math/stan/math/prim/meta/scalar_type_pre.hpp \
   stan/lib/stan_math/stan/math/prim/meta/seq_view.hpp \
@@ -446,14 +448,28 @@
   stan/lib/stan_math/stan/math/prim/meta/StdVectorBuilder.hpp \
   stan/lib/stan_math/stan/math/prim/meta/VectorBuilderHelper.hpp \
   stan/lib/stan_math/stan/math/prim/meta/VectorBuilder.hpp \
-  stan/lib/stan_math/stan/math/rev/core/build_vari_array.hpp \
+  stan/lib/stan_math/stan/math/rev/meta.hpp \
+  stan/lib/stan_math/stan/math/rev/meta/apply_scalar_unary.hpp \
   stan/lib/stan_math/stan/math/rev/core/var.hpp \
   stan/lib/stan_math/stan/math/rev/core/vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/chainable_alloc.hpp \
   stan/lib/stan_math/stan/math/rev/core/chainablestack.hpp \
+  stan/lib/stan_math/stan/math/rev/core/autodiffstackstorage.hpp \
+  stan/lib/stan_math/stan/math/memory/stack_alloc.hpp \
   stan/lib/stan_math/stan/math/rev/core/grad.hpp \
   stan/lib/stan_math/stan/math/rev/core/empty_nested.hpp \
   stan/lib/stan_math/stan/math/rev/core/nested_size.hpp \
+  stan/lib/stan_math/stan/math/rev/meta/is_var.hpp \
+  stan/lib/stan_math/stan/math/rev/meta/partials_type.hpp \
+  stan/lib/stan_math/stan/math/rev/meta/operands_and_partials.hpp \
+  stan/lib/stan_math/stan/math/rev/core/precomputed_gradients.hpp \
+  stan/lib/stan_math/stan/math/prim/err/check_consistent_sizes.hpp \
+  stan/lib/stan_math/stan/math/prim/err/check_consistent_size.hpp \
+  stan/lib/stan_math/stan/math/prim/err/invalid_argument.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/size.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/typedefs.hpp \
+  stan/lib/stan_math/stan/math/rev/core/build_vari_array.hpp \
+  stan/lib/stan_math/stan/math/rev/core/count_vars.hpp \
   stan/lib/stan_math/stan/math/rev/core/init_chainablestack.hpp \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/task_scheduler_observer.h \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/atomic.h \
@@ -473,29 +489,25 @@
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/_template_helpers.h \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/../tbb_config.h \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/aligned_space.h \
+  stan/lib/stan_math/stan/math/rev/core/std_iterator_traits.hpp \
   stan/lib/stan_math/stan/math/rev/core/ddv_vari.hpp \
+  stan/lib/stan_math/stan/math/rev/core/deep_copy_vars.hpp \
   stan/lib/stan_math/stan/math/rev/core/dv_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/dvd_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/dvv_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/gevv_vvv_vari.hpp \
+  stan/lib/stan_math/stan/math/rev/core/nested_rev_autodiff.hpp \
+  stan/lib/stan_math/stan/math/rev/core/recover_memory_nested.hpp \
+  stan/lib/stan_math/stan/math/rev/core/set_zero_all_adjoints_nested.hpp \
+  stan/lib/stan_math/stan/math/rev/core/start_nested.hpp \
   stan/lib/stan_math/stan/math/rev/core/matrix_vari.hpp \
   stan/lib/stan_math/stan/math/rev/fun/Eigen_NumTraits.hpp \
-  stan/lib/stan_math/stan/math/rev/meta.hpp \
-  stan/lib/stan_math/stan/math/rev/meta/is_var.hpp \
-  stan/lib/stan_math/stan/math/rev/meta/partials_type.hpp \
-  stan/lib/stan_math/stan/math/rev/meta/operands_and_partials.hpp \
-  stan/lib/stan_math/stan/math/rev/core/precomputed_gradients.hpp \
-  stan/lib/stan_math/stan/math/prim/err/check_consistent_sizes.hpp \
-  stan/lib/stan_math/stan/math/prim/err/check_consistent_size.hpp \
-  stan/lib/stan_math/stan/math/prim/err/invalid_argument.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/typedefs.hpp \
   stan/lib/stan_math/stan/math/rev/core/std_numeric_limits.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_addition.hpp \
   stan/lib/stan_math/stan/math/rev/core/vv_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/vd_vari.hpp \
   stan/lib/stan_math/stan/math/prim/fun/constants.hpp \
   stan/lib/stan_math/stan/math/prim/fun/inv.hpp \
-  stan/lib/stan_math/stan/math/prim/vectorize/apply_scalar_unary.hpp \
   stan/lib/stan_math/lib/boost_1.72.0/boost/math/constants/constants.hpp \
   stan/lib/stan_math/lib/boost_1.72.0/boost/math/policies/policy.hpp \
   stan/lib/stan_math/lib/boost_1.72.0/boost/mpl/list.hpp \
@@ -909,6 +921,12 @@
   stan/lib/stan_math/stan/math/prim/fun/is_nan.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_divide_equal.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_division.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_division.hpp \
+  stan/lib/stan_math/stan/math/rev/core/std_complex.hpp \
+  stan/lib/stan_math/stan/math/prim/core/complex_base.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/square.hpp \
+  stan/lib/stan_math/stan/math/rev/core/operator_multiplication.hpp \
+  stan/lib/stan_math/stan/math/rev/core/operator_subtraction.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_equal.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_greater_than.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_greater_than_or_equal.hpp \
@@ -917,8 +935,6 @@
   stan/lib/stan_math/stan/math/rev/core/operator_logical_and.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_logical_or.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_minus_equal.hpp \
-  stan/lib/stan_math/stan/math/rev/core/operator_subtraction.hpp \
-  stan/lib/stan_math/stan/math/rev/core/operator_multiplication.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_multiply_equal.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_not_equal.hpp \
   stan/lib/stan_math/stan/math/rev/core/operator_plus_equal.hpp \
@@ -934,10 +950,7 @@
   stan/lib/stan_math/stan/math/rev/core/vvv_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/print_stack.hpp \
   stan/lib/stan_math/stan/math/rev/core/recover_memory.hpp \
-  stan/lib/stan_math/stan/math/rev/core/recover_memory_nested.hpp \
   stan/lib/stan_math/stan/math/rev/core/set_zero_all_adjoints.hpp \
-  stan/lib/stan_math/stan/math/rev/core/set_zero_all_adjoints_nested.hpp \
-  stan/lib/stan_math/stan/math/rev/core/start_nested.hpp \
   stan/lib/stan_math/stan/math/rev/core/std_isinf.hpp \
   stan/lib/stan_math/stan/math/prim/fun/is_inf.hpp \
   stan/lib/stan_math/stan/math/rev/core/std_isnan.hpp \
@@ -946,22 +959,33 @@
   stan/lib/stan_math/stan/math/rev/core/vdv_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/vector_vari.hpp \
   stan/lib/stan_math/stan/math/rev/core/vvd_vari.hpp \
-  stan/lib/stan_math/stan/math/rev/vectorize.hpp \
-  stan/lib/stan_math/stan/math/rev/vectorize/apply_scalar_unary.hpp \
+  stan/lib/stan_math/stan/math/rev/core/save_varis.hpp \
   stan/lib/stan_math/stan/math/prim.hpp \
   stan/lib/stan_math/stan/math/version.hpp \
   stan/lib/stan_math/stan/math/prim/core.hpp \
   stan/lib/stan_math/stan/math/prim/core/init_threadpool_tbb.hpp \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/task_scheduler_init.h \
+  stan/lib/stan_math/stan/math/prim/core/operator_addition.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_equal_equal.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_minus.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_multiplication.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_not_equal.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_plus.hpp \
+  stan/lib/stan_math/stan/math/prim/core/operator_subtraction.hpp \
   stan/lib/stan_math/stan/math/prim/err.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_2F1_converges.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_not_nan.hpp \
   stan/lib/stan_math/stan/math/prim/err/throw_domain_error.hpp \
   stan/lib/stan_math/stan/math/prim/err/throw_domain_error_vec.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/get.hpp \
   stan/lib/stan_math/stan/math/prim/fun/value_of_rec.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/fabs.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/floor.hpp \
   stan/lib/stan_math/stan/math/prim/fun/is_nonpositive_integer.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_3F2_converges.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_bounded.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/max_size.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/size_zero.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_cholesky_factor.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_positive.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_less_or_equal.hpp \
@@ -973,9 +997,11 @@
   stan/lib/stan_math/stan/math/prim/err/check_nonzero_size.hpp \
   stan/lib/stan_math/stan/math/prim/err/constraint_tolerance.hpp \
   stan/lib/stan_math/stan/math/prim/fun/abs.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/hypot.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_column_index.hpp \
   stan/lib/stan_math/stan/math/prim/err/out_of_range.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_consistent_size_mvt.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/size_mvt.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_consistent_sizes_mvt.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_corr_matrix.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_pos_definite.hpp \
@@ -1033,8 +1059,10 @@
   stan/lib/stan_math/stan/math/prim/err/check_simplex.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_std_vector_index.hpp \
   stan/lib/stan_math/stan/math/prim/err/check_vector.hpp \
+  stan/lib/stan_math/stan/math/prim/err/check_vector_index.hpp \
   stan/lib/stan_math/stan/math/prim/err/domain_error.hpp \
   stan/lib/stan_math/stan/math/prim/err/domain_error_vec.hpp \
+  stan/lib/stan_math/stan/math/prim/err/elementwise_check.hpp \
   stan/lib/stan_math/stan/math/prim/err/invalid_argument_vec.hpp \
   stan/lib/stan_math/stan/math/prim/err/is_cholesky_factor.hpp \
   stan/lib/stan_math/stan/math/prim/err/is_positive.hpp \
@@ -1060,6 +1088,19 @@
   stan/lib/stan_math/stan/math/prim/fun.hpp \
   stan/lib/stan_math/stan/math/prim/fun/accumulator.hpp \
   stan/lib/stan_math/stan/math/prim/fun/acos.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/asin.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/asinh.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/arg.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/copysign.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/isfinite.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/isinf.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/isnan.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/polar.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/cos.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/cosh.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/exp.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/i_times.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/sqrt.hpp \
   stan/lib/stan_math/stan/math/prim/fun/acosh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/add.hpp \
   stan/lib/stan_math/stan/math/prim/fun/add_diag.hpp \
@@ -1072,8 +1113,6 @@
   stan/lib/stan_math/stan/math/prim/fun/array_builder.hpp \
   stan/lib/stan_math/stan/math/prim/fun/promote_elements.hpp \
   stan/lib/stan_math/stan/math/prim/fun/as_bool.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/asin.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/asinh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/atan.hpp \
   stan/lib/stan_math/stan/math/prim/fun/atanh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/autocorrelation.hpp \
@@ -1157,9 +1196,12 @@
   stan/lib/stan_math/stan/math/prim/fun/log1m.hpp \
   stan/lib/stan_math/stan/math/prim/fun/log1p.hpp \
   stan/lib/stan_math/stan/math/prim/fun/binomial_coefficient_log.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/multiply_log.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/block.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/digamma.hpp \
   stan/lib/stan_math/stan/math/prim/fun/boost_policy.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/lbeta.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/lgamma_stirling_diff.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/lgamma_stirling.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/block.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cbrt.hpp \
   stan/lib/stan_math/stan/math/prim/fun/ceil.hpp \
   stan/lib/stan_math/stan/math/prim/fun/chol2inv.hpp \
@@ -1167,12 +1209,10 @@
   stan/lib/stan_math/stan/math/prim/fun/dot_product.hpp \
   stan/lib/stan_math/stan/math/prim/fun/mdivide_left_tri_low.hpp \
   stan/lib/stan_math/stan/math/prim/fun/mdivide_left_tri.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/promote_common.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/common_type.hpp \
   stan/lib/stan_math/stan/math/prim/fun/inv_square.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/square.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cholesky_corr_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/corr_constrain.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/tanh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cholesky_corr_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/corr_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cholesky_decompose.hpp \
@@ -1188,24 +1228,19 @@
   stan/lib/stan_math/stan/math/prim/fun/cols.hpp \
   stan/lib/stan_math/stan/math/prim/fun/columns_dot_product.hpp \
   stan/lib/stan_math/stan/math/prim/fun/columns_dot_self.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/constant_vector.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/conj.hpp \
   stan/lib/stan_math/stan/math/prim/fun/corr_matrix_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/read_corr_matrix.hpp \
   stan/lib/stan_math/stan/math/prim/fun/read_corr_L.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/sqrt.hpp \
   stan/lib/stan_math/stan/math/prim/fun/multiply_lower_tri_self_transpose.hpp \
   stan/lib/stan_math/stan/math/prim/fun/typedefs.hpp \
   stan/lib/stan_math/stan/math/prim/fun/corr_matrix_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/factor_cov_matrix.hpp \
   stan/lib/stan_math/stan/math/prim/fun/factor_U.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/cos.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/cosh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cov_exp_quad.hpp \
   stan/lib/stan_math/stan/math/prim/fun/gp_exp_quad_cov.hpp \
   stan/lib/stan_math/stan/math/prim/fun/divide_columns.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/divide.hpp \
   stan/lib/stan_math/stan/math/prim/fun/squared_distance.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/exp.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cov_matrix_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/cov_matrix_constrain_lkj.hpp \
   stan/lib/stan_math/stan/math/prim/fun/positive_constrain.hpp \
@@ -1227,8 +1262,8 @@
   stan/lib/stan_math/stan/math/prim/fun/diag_post_multiply.hpp \
   stan/lib/stan_math/stan/math/prim/fun/diag_pre_multiply.hpp \
   stan/lib/stan_math/stan/math/prim/fun/diagonal.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/digamma.hpp \
   stan/lib/stan_math/stan/math/prim/fun/distance.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/divide.hpp \
   stan/lib/stan_math/stan/math/prim/fun/dot.hpp \
   stan/lib/stan_math/stan/math/prim/fun/eigenvalues_sym.hpp \
   stan/lib/stan_math/stan/math/prim/fun/eigenvectors_sym.hpp \
@@ -1239,12 +1274,10 @@
   stan/lib/stan_math/stan/math/prim/fun/exp2.hpp \
   stan/lib/stan_math/stan/math/prim/fun/expm1.hpp \
   stan/lib/stan_math/stan/math/prim/fun/F32.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/fabs.hpp \
   stan/lib/stan_math/stan/math/prim/fun/falling_factorial.hpp \
   stan/lib/stan_math/stan/math/prim/fun/fdim.hpp \
   stan/lib/stan_math/stan/math/prim/fun/fill.hpp \
   stan/lib/stan_math/stan/math/prim/fun/finite_diff_stepsize.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/floor.hpp \
   stan/lib/stan_math/stan/math/prim/fun/fma.hpp \
   stan/lib/stan_math/stan/math/prim/fun/fmax.hpp \
   stan/lib/stan_math/stan/math/prim/fun/fmin.hpp \
@@ -1258,20 +1291,23 @@
   stan/lib/stan_math/stan/math/prim/fun/gp_matern32_cov.hpp \
   stan/lib/stan_math/stan/math/prim/fun/gp_matern52_cov.hpp \
   stan/lib/stan_math/stan/math/prim/fun/gp_periodic_cov.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/sin.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/sinh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/grad_2F1.hpp \
   stan/lib/stan_math/stan/math/prim/fun/grad_F32.hpp \
   stan/lib/stan_math/stan/math/prim/fun/grad_inc_beta.hpp \
   stan/lib/stan_math/stan/math/prim/fun/inc_beta.hpp \
   stan/lib/stan_math/stan/math/prim/fun/grad_reg_inc_beta.hpp \
   stan/lib/stan_math/stan/math/prim/fun/grad_reg_inc_gamma.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/multiply_log.hpp \
   stan/lib/stan_math/stan/math/prim/fun/grad_reg_lower_inc_gamma.hpp \
   stan/lib/stan_math/stan/math/prim/fun/tgamma.hpp \
   stan/lib/stan_math/stan/math/prim/fun/head.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/hypot.hpp \
   stan/lib/stan_math/stan/math/prim/fun/identity_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/identity_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/identity_matrix.hpp \
   stan/lib/stan_math/stan/math/prim/fun/if_else.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/imag.hpp \
   stan/lib/stan_math/stan/math/prim/fun/initialize.hpp \
   stan/lib/stan_math/stan/math/prim/fun/int_step.hpp \
   stan/lib/stan_math/stan/math/prim/fun/inv_Phi.hpp \
@@ -1282,12 +1318,16 @@
   stan/lib/stan_math/stan/math/prim/fun/inverse.hpp \
   stan/lib/stan_math/stan/math/prim/fun/inverse_softmax.hpp \
   stan/lib/stan_math/stan/math/prim/fun/inverse_spd.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/isnormal.hpp \
   stan/lib/stan_math/stan/math/prim/fun/is_uninitialized.hpp \
   stan/lib/stan_math/stan/math/prim/fun/lb_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/lb_free.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/lbeta.hpp \
   stan/lib/stan_math/stan/math/prim/fun/ldexp.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/linspaced_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/linspaced_row_vector.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/linspaced_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/lmgamma.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/logb.hpp \
   stan/lib/stan_math/stan/math/prim/fun/log10.hpp \
   stan/lib/stan_math/stan/math/prim/fun/log1m_exp.hpp \
   stan/lib/stan_math/stan/math/prim/fun/log1m_inv_logit.hpp \
@@ -1328,6 +1368,7 @@
   stan/lib/stan_math/stan/math/prim/fun/matrix_exp_action_handler.hpp \
   stan/lib/stan_math/stan/math/prim/fun/matrix_power.hpp \
   stan/lib/stan_math/stan/math/prim/fun/max.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/max_size_mvt.hpp \
   stan/lib/stan_math/stan/math/prim/fun/mdivide_left.hpp \
   stan/lib/stan_math/stan/math/prim/fun/mdivide_left_ldlt.hpp \
   stan/lib/stan_math/stan/math/prim/fun/mdivide_left_spd.hpp \
@@ -1343,10 +1384,17 @@
   stan/lib/stan_math/stan/math/prim/fun/modified_bessel_second_kind.hpp \
   stan/lib/stan_math/stan/math/prim/fun/modulus.hpp \
   stan/lib/stan_math/stan/math/prim/fun/multiply.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/norm.hpp \
   stan/lib/stan_math/stan/math/prim/fun/num_elements.hpp \
   stan/lib/stan_math/stan/math/prim/fun/offset_multiplier_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/offset_multiplier_free.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/one_hot_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/one_hot_int_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/one_hot_row_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/one_hot_vector.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/ones_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/ones_int_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/ones_row_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/ones_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/ordered_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/ordered_free.hpp \
@@ -1356,10 +1404,12 @@
   stan/lib/stan_math/stan/math/prim/fun/positive_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/positive_ordered_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/positive_ordered_free.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/pow.hpp \
   stan/lib/stan_math/stan/math/prim/fun/primitive_value.hpp \
   stan/lib/stan_math/stan/math/prim/fun/prob_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/prob_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/prod.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/proj.hpp \
   stan/lib/stan_math/stan/math/prim/fun/promote_scalar.hpp \
   stan/lib/stan_math/stan/math/prim/fun/qr_Q.hpp \
   stan/lib/stan_math/stan/math/prim/fun/qr_R.hpp \
@@ -1369,28 +1419,28 @@
   stan/lib/stan_math/stan/math/prim/fun/quad_form_diag.hpp \
   stan/lib/stan_math/stan/math/prim/fun/quad_form_sym.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rank.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/real.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rep_array.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rep_matrix.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rep_row_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rep_vector.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/reverse.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rising_factorial.hpp \
   stan/lib/stan_math/stan/math/prim/fun/round.hpp \
   stan/lib/stan_math/stan/math/prim/fun/row.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rows.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rows_dot_product.hpp \
   stan/lib/stan_math/stan/math/prim/fun/rows_dot_self.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/scalbn.hpp \
   stan/lib/stan_math/stan/math/prim/fun/scale_matrix_exp_multiply.hpp \
   stan/lib/stan_math/stan/math/prim/fun/scaled_add.hpp \
   stan/lib/stan_math/stan/math/prim/fun/sd.hpp \
   stan/lib/stan_math/stan/math/prim/fun/segment.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/set_spaced_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/sign.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/signbit.hpp \
   stan/lib/stan_math/stan/math/prim/fun/simplex_constrain.hpp \
   stan/lib/stan_math/stan/math/prim/fun/simplex_free.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/sin.hpp \
   stan/lib/stan_math/stan/math/prim/fun/singular_values.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/sinh.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/size_zero.hpp \
   stan/lib/stan_math/stan/math/prim/fun/softmax.hpp \
   stan/lib/stan_math/stan/math/prim/fun/sort_asc.hpp \
   stan/lib/stan_math/stan/math/prim/fun/sort_desc.hpp \
@@ -1404,7 +1454,6 @@
   stan/lib/stan_math/stan/math/prim/fun/subtract.hpp \
   stan/lib/stan_math/stan/math/prim/fun/tail.hpp \
   stan/lib/stan_math/stan/math/prim/fun/tan.hpp \
-  stan/lib/stan_math/stan/math/prim/fun/tanh.hpp \
   stan/lib/stan_math/stan/math/prim/fun/to_array_1d.hpp \
   stan/lib/stan_math/stan/math/prim/fun/to_array_2d.hpp \
   stan/lib/stan_math/stan/math/prim/fun/to_matrix.hpp \
@@ -1422,8 +1471,12 @@
   stan/lib/stan_math/stan/math/prim/fun/unit_vector_free.hpp \
   stan/lib/stan_math/stan/math/prim/fun/welford_covar_estimator.hpp \
   stan/lib/stan_math/stan/math/prim/fun/welford_var_estimator.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/zeros_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/zeros_int_array.hpp \
+  stan/lib/stan_math/stan/math/prim/fun/zeros_row_vector.hpp \
   stan/lib/stan_math/stan/math/prim/fun/zeros_vector.hpp \
   stan/lib/stan_math/stan/math/prim/functor.hpp \
+  stan/lib/stan_math/stan/math/prim/functor/apply.hpp \
   stan/lib/stan_math/stan/math/prim/functor/coupled_ode_observer.hpp \
   stan/lib/stan_math/stan/math/prim/functor/coupled_ode_system.hpp \
   stan/lib/stan_math/stan/math/prim/functor/finite_diff_gradient.hpp \
@@ -2246,6 +2299,11 @@
   stan/lib/stan_math/stan/math/prim/functor/mpi_cluster.hpp \
   stan/lib/stan_math/stan/math/prim/functor/mpi_command.hpp \
   stan/lib/stan_math/stan/math/prim/functor/mpi_distributed_apply.hpp \
+  stan/lib/stan_math/stan/math/prim/functor/reduce_sum.hpp \
+  stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/parallel_reduce.h \
+  stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/partitioner.h \
+  stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/blocked_range.h \
+  stan/lib/stan_math/stan/math/prim/functor/reduce_sum_static.hpp \
   stan/lib/stan_math/stan/math/prim/prob.hpp \
   stan/lib/stan_math/stan/math/prim/prob/bernoulli_ccdf_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/bernoulli_lccdf.hpp \
@@ -2347,6 +2405,14 @@
   stan/lib/stan_math/stan/math/prim/prob/dirichlet_lpdf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/dirichlet_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/dirichlet_rng.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_ccdf_log.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_lccdf.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_cdf.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_cdf_log.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_lcdf.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_log.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_lpmf.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/discrete_range_rng.hpp \
   stan/lib/stan_math/stan/math/prim/prob/double_exponential_ccdf_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/double_exponential_lccdf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/double_exponential_cdf.hpp \
@@ -2489,12 +2555,10 @@
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_lcdf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_lpmf.hpp \
-  stan/lib/stan_math/stan/math/prim/prob/poisson_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_glm_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_glm_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_lpmf.hpp \
-  stan/lib/stan_math/stan/math/prim/prob/poisson_log_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_rng.hpp \
   stan/lib/stan_math/lib/boost_1.72.0/boost/random/poisson_distribution.hpp \
   stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_rng.hpp \
@@ -2545,9 +2609,11 @@
   stan/lib/stan_math/stan/math/prim/prob/poisson_cdf_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_lcdf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_log.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/poisson_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_log_glm_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_log_glm_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_log_log.hpp \
+  stan/lib/stan_math/stan/math/prim/prob/poisson_log_lpmf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_log_rng.hpp \
   stan/lib/stan_math/stan/math/prim/prob/poisson_rng.hpp \
   stan/lib/stan_math/stan/math/prim/prob/rayleigh_ccdf_log.hpp \
@@ -2613,7 +2679,6 @@
   stan/lib/stan_math/stan/math/prim/prob/wiener_lpdf.hpp \
   stan/lib/stan_math/stan/math/prim/prob/wishart_log.hpp \
   stan/lib/stan_math/stan/math/prim/prob/wishart_lpdf.hpp \
-  stan/lib/stan_math/stan/math/prim/vectorize.hpp \
   stan/lib/stan_math/stan/math/rev/fun.hpp \
   stan/lib/stan_math/stan/math/rev/fun/LDLT_alloc.hpp \
   stan/lib/stan_math/stan/math/rev/fun/LDLT_factor.hpp \
@@ -2621,41 +2686,48 @@
   stan/lib/stan_math/stan/math/rev/fun/Phi_approx.hpp \
   stan/lib/stan_math/stan/math/rev/fun/abs.hpp \
   stan/lib/stan_math/stan/math/rev/fun/fabs.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/hypot.hpp \
   stan/lib/stan_math/stan/math/rev/fun/acos.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/acosh.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/as_bool.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/arg.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/atan2.hpp \
   stan/lib/stan_math/stan/math/rev/fun/asin.hpp \
   stan/lib/stan_math/stan/math/rev/fun/asinh.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/value_of_rec.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/cosh.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/exp.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/is_inf.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/is_nan.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/sin.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/sinh.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/log.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/cos.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/sqrt.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/polar.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/acosh.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/as_bool.hpp \
   stan/lib/stan_math/stan/math/rev/fun/atan.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/atan2.hpp \
   stan/lib/stan_math/stan/math/rev/fun/atanh.hpp \
   stan/lib/stan_math/stan/math/rev/fun/bessel_first_kind.hpp \
   stan/lib/stan_math/stan/math/rev/fun/bessel_second_kind.hpp \
   stan/lib/stan_math/stan/math/rev/fun/beta.hpp \
   stan/lib/stan_math/stan/math/rev/fun/binary_log_loss.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/calculate_chain.hpp \
   stan/lib/stan_math/stan/math/rev/fun/cbrt.hpp \
   stan/lib/stan_math/stan/math/rev/fun/ceil.hpp \
   stan/lib/stan_math/stan/math/rev/fun/cholesky_decompose.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/value_of_rec.hpp \
   stan/lib/stan_math/stan/math/rev/fun/value_of.hpp \
   stan/lib/stan_math/stan/math/rev/fun/columns_dot_product.hpp \
   stan/lib/stan_math/stan/math/rev/fun/dot_product.hpp \
   stan/lib/stan_math/stan/math/rev/fun/columns_dot_self.hpp \
   stan/lib/stan_math/stan/math/rev/fun/dot_self.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/cos.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/cosh.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/conj.hpp \
   stan/lib/stan_math/stan/math/rev/fun/cov_exp_quad.hpp \
   stan/lib/stan_math/stan/math/rev/fun/gp_exp_quad_cov.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/crossprod.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/tcrossprod.hpp \
   stan/lib/stan_math/stan/math/rev/fun/determinant.hpp \
   stan/lib/stan_math/stan/math/rev/fun/digamma.hpp \
   stan/lib/stan_math/stan/math/rev/fun/divide.hpp \
   stan/lib/stan_math/stan/math/rev/fun/to_var.hpp \
   stan/lib/stan_math/stan/math/rev/fun/erf.hpp \
   stan/lib/stan_math/stan/math/rev/fun/erfc.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/exp.hpp \
   stan/lib/stan_math/stan/math/rev/fun/exp2.hpp \
   stan/lib/stan_math/stan/math/rev/fun/expm1.hpp \
   stan/lib/stan_math/stan/math/rev/fun/falling_factorial.hpp \
@@ -2663,7 +2735,6 @@
   stan/lib/stan_math/stan/math/rev/fun/floor.hpp \
   stan/lib/stan_math/stan/math/rev/fun/fma.hpp \
   stan/lib/stan_math/stan/math/rev/fun/fmax.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/is_nan.hpp \
   stan/lib/stan_math/stan/math/rev/fun/fmin.hpp \
   stan/lib/stan_math/stan/math/rev/fun/fmod.hpp \
   stan/lib/stan_math/stan/math/rev/fun/gamma_p.hpp \
@@ -2676,19 +2747,15 @@
   stan/lib/stan_math/stan/math/rev/fun/inv.hpp \
   stan/lib/stan_math/stan/math/rev/fun/inv_sqrt.hpp \
   stan/lib/stan_math/stan/math/rev/fun/inv_square.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/sqrt.hpp \
   stan/lib/stan_math/stan/math/rev/fun/square.hpp \
   stan/lib/stan_math/stan/math/rev/fun/lgamma.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/log.hpp \
   stan/lib/stan_math/stan/math/rev/fun/log1m.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/hypot.hpp \
   stan/lib/stan_math/stan/math/rev/fun/if_else.hpp \
   stan/lib/stan_math/stan/math/rev/fun/initialize_variable.hpp \
   stan/lib/stan_math/stan/math/rev/fun/inv_Phi.hpp \
   stan/lib/stan_math/stan/math/rev/fun/inv_cloglog.hpp \
   stan/lib/stan_math/stan/math/rev/fun/inv_logit.hpp \
   stan/lib/stan_math/stan/math/rev/fun/inverse.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/is_inf.hpp \
   stan/lib/stan_math/stan/math/rev/fun/is_uninitialized.hpp \
   stan/lib/stan_math/stan/math/rev/fun/lbeta.hpp \
   stan/lib/stan_math/stan/math/rev/fun/ldexp.hpp \
@@ -2722,11 +2789,13 @@
   stan/lib/stan_math/stan/math/rev/fun/modified_bessel_second_kind.hpp \
   stan/lib/stan_math/stan/math/rev/fun/multiply_log.hpp \
   stan/lib/stan_math/stan/math/rev/fun/multiply_lower_tri_self_transpose.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/norm.hpp \
   stan/lib/stan_math/stan/math/rev/fun/ordered_constrain.hpp \
   stan/lib/stan_math/stan/math/rev/functor/adj_jac_apply.hpp \
   stan/lib/stan_math/stan/math/rev/fun/owens_t.hpp \
   stan/lib/stan_math/stan/math/rev/fun/positive_ordered_constrain.hpp \
   stan/lib/stan_math/stan/math/rev/fun/primitive_value.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/proj.hpp \
   stan/lib/stan_math/stan/math/rev/fun/quad_form.hpp \
   stan/lib/stan_math/stan/math/rev/fun/quad_form_sym.hpp \
   stan/lib/stan_math/stan/math/rev/fun/rising_factorial.hpp \
@@ -2734,8 +2803,6 @@
   stan/lib/stan_math/stan/math/rev/fun/rows_dot_product.hpp \
   stan/lib/stan_math/stan/math/rev/fun/sd.hpp \
   stan/lib/stan_math/stan/math/rev/fun/simplex_constrain.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/sin.hpp \
-  stan/lib/stan_math/stan/math/rev/fun/sinh.hpp \
   stan/lib/stan_math/stan/math/rev/fun/softmax.hpp \
   stan/lib/stan_math/stan/math/rev/fun/squared_distance.hpp \
   stan/lib/stan_math/stan/math/rev/fun/stan_print.hpp \
@@ -2743,6 +2810,7 @@
   stan/lib/stan_math/stan/math/rev/fun/sum.hpp \
   stan/lib/stan_math/stan/math/rev/fun/tan.hpp \
   stan/lib/stan_math/stan/math/rev/fun/tanh.hpp \
+  stan/lib/stan_math/stan/math/rev/fun/tcrossprod.hpp \
   stan/lib/stan_math/stan/math/rev/fun/tgamma.hpp \
   stan/lib/stan_math/stan/math/rev/fun/trace_gen_inv_quad_form_ldlt.hpp \
   stan/lib/stan_math/stan/math/rev/fun/trace_inv_quad_form_ldlt.hpp \
@@ -2756,19 +2824,19 @@
   stan/lib/stan_math/stan/math/rev/functor/algebra_system.hpp \
   stan/lib/stan_math/stan/math/rev/functor/jacobian.hpp \
   stan/lib/stan_math/stan/math/rev/functor/kinsol_data.hpp \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/kinsol/kinsol.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_nvector.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_types.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_config.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/kinsol/kinsol_ls.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_direct.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_iterative.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_linearsolver.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_matrix.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sunmatrix/sunmatrix_dense.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sunlinsol/sunlinsol_dense.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_dense.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/nvector/nvector_serial.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/kinsol/kinsol.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_nvector.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_types.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_config.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/kinsol/kinsol_ls.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_direct.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_iterative.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_linearsolver.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_matrix.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sunmatrix/sunmatrix_dense.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sunlinsol/sunlinsol_dense.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_dense.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/nvector/nvector_serial.h \
   stan/lib/stan_math/stan/math/rev/functor/algebra_solver_powell.hpp \
   stan/lib/stan_math/lib/eigen_3.3.3/unsupported/Eigen/NonLinearOptimization \
   stan/lib/stan_math/lib/eigen_3.3.3/unsupported/Eigen/NumericalDiff \
@@ -2789,27 +2857,26 @@
   stan/lib/stan_math/stan/math/rev/functor/coupled_ode_system.hpp \
   stan/lib/stan_math/stan/math/rev/functor/cvodes_integrator.hpp \
   stan/lib/stan_math/stan/math/rev/functor/cvodes_utils.hpp \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/cvodes/cvodes.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_nonlinearsolver.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/cvodes/cvodes_ls.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/cvodes/cvodes.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_nonlinearsolver.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/cvodes/cvodes_ls.h \
   stan/lib/stan_math/stan/math/rev/functor/cvodes_ode_data.hpp \
   stan/lib/stan_math/stan/math/rev/functor/gradient.hpp \
   stan/lib/stan_math/stan/math/rev/functor/integrate_1d.hpp \
   stan/lib/stan_math/stan/math/rev/functor/integrate_dae.hpp \
   stan/lib/stan_math/stan/math/rev/functor/idas_forward_system.hpp \
   stan/lib/stan_math/stan/math/rev/functor/idas_system.hpp \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/idas/idas.h \
-  stan/lib/stan_math/lib/sundials_4.1.0/include/idas/idas_ls.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/idas/idas.h \
+  stan/lib/stan_math/lib/sundials_5.2.0/include/idas/idas_ls.h \
   stan/lib/stan_math/stan/math/rev/functor/idas_integrator.hpp \
   stan/lib/stan_math/stan/math/rev/functor/integrate_ode_adams.hpp \
   stan/lib/stan_math/stan/math/rev/functor/integrate_ode_bdf.hpp \
   stan/lib/stan_math/stan/math/rev/functor/map_rect_concurrent.hpp \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/parallel_for.h \
-  stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/partitioner.h \
-  stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/blocked_range.h \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/_tbb_trace_impl.h \
   stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/../tbb_profiling.h \
   stan/lib/stan_math/stan/math/rev/functor/map_rect_reduce.hpp \
+  stan/lib/stan_math/stan/math/rev/functor/reduce_sum.hpp \
   stan/src/stan/io/cmd_line.hpp stan/src/stan/io/dump.hpp \
   stan/src/stan/io/validate_zero_buf.hpp \
   stan/src/stan/io/var_context.hpp stan/src/stan/io/reader.hpp \
@@ -2941,9 +3008,59 @@
   src/cmdstan/arguments/arg_diagnostic_file.hpp \
   src/cmdstan/arguments/arg_refresh.hpp \
   src/cmdstan/arguments/arg_random.hpp \
-  src/cmdstan/arguments/arg_seed.hpp src/cmdstan/write_model.hpp \
-  src/cmdstan/write_stan.hpp stan/src/stan/version.hpp \
-  src/cmdstan/io/json/json_data.hpp src/cmdstan/io/json/json_error.hpp \
+  src/cmdstan/arguments/arg_seed.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_types.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_clock.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/c_time.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/compiler_config.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/locale_config.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/config/auto_link.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/microsec_time_clock.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/ptime.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_system.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_config.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_duration.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/special_defs.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_defs.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_resolution_traits.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/int_adapter.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/gregorian_types.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/year_month_day.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/period.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_calendar.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_weekday.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/constrained_value.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_defs.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day_of_year.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.ipp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_ymd.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_year.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_month.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration_types.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration_types.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_date.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/adjust_functors.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/wrapping_int.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_generators.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_clock_device.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_iterator.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_split.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_counted.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/date_duration_operators.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_duration.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/time_period.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_iterator.hpp \
+  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/dst_rules.hpp \
+  src/cmdstan/write_model.hpp src/cmdstan/write_opencl_device.hpp \
+  src/cmdstan/write_parallel_info.hpp src/cmdstan/write_stan.hpp \
+  stan/src/stan/version.hpp src/cmdstan/io/json/json_data.hpp \
+  src/cmdstan/io/json/json_error.hpp \
   src/cmdstan/io/json/rapidjson_parser.hpp \
   lib/rapidjson_1.1.0/rapidjson/reader.h \
   lib/rapidjson_1.1.0/rapidjson/allocators.h \
@@ -3131,56 +3248,7 @@
   stan/src/stan/variational/families/normal_fullrank.hpp \
   stan/src/stan/variational/base_family.hpp \
   stan/src/stan/variational/families/normal_meanfield.hpp \
-  stan/src/stan/services/experimental/advi/meanfield.hpp \
-  stan/lib/stan_math/stan/math/opencl/opencl_context.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_types.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_clock.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/c_time.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/compiler_config.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/locale_config.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/config/auto_link.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/microsec_time_clock.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/ptime.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_system.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_config.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_duration.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/special_defs.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_defs.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_resolution_traits.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/int_adapter.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/gregorian_types.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/year_month_day.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/period.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_calendar.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_weekday.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/constrained_value.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_defs.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day_of_year.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.ipp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_ymd.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_year.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_month.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration_types.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration_types.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_date.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/adjust_functors.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/wrapping_int.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_generators.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_clock_device.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_iterator.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_split.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_counted.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/date_duration_operators.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_duration.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/time_period.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_iterator.hpp \
-  stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/dst_rules.hpp
+  stan/src/stan/services/experimental/advi/meanfield.hpp
 
 stan/src/stan/model/model_header.hpp:
 
@@ -3692,11 +3760,13 @@ stan/lib/stan_math/lib/eigen_3.3.3/Eigen/src/IterativeLinearSolvers/IncompleteCh
 
 stan/lib/stan_math/stan/math/rev/core.hpp:
 
-stan/lib/stan_math/stan/math/rev/core/autodiffstackstorage.hpp:
-
-stan/lib/stan_math/stan/math/memory/stack_alloc.hpp:
+stan/lib/stan_math/stan/math/rev/core/accumulate_adjoints.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/ad_promotable.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/bool_constant.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/append_return_type.hpp:
 
@@ -3978,35 +4048,25 @@ stan/lib/stan_math/lib/boost_1.72.0/boost/mpl/aux_/preprocessed/gcc/or.hpp:
 
 stan/lib/stan_math/lib/boost_1.72.0/boost/mpl/not.hpp:
 
+stan/lib/stan_math/stan/math/prim/meta/base_type.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_complex.hpp:
+
 stan/lib/stan_math/stan/math/prim/meta/scalar_type.hpp:
 
-stan/lib/stan_math/stan/math/prim/meta/is_eigen.hpp:
+stan/lib/stan_math/stan/math/prim/meta/require_helpers.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/conjunction.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/disjunction.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/value_type.hpp:
 
+stan/lib/stan_math/stan/math/prim/meta/is_eigen.hpp:
+
 stan/lib/stan_math/stan/math/prim/meta/is_vector.hpp:
 
-stan/lib/stan_math/stan/math/prim/meta/bool_constant.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/ad_promotable.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/as_array_or_scalar.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/require_generics.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/is_container.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/is_fvar.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/is_string_convertible.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/is_var.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/is_var_or_arithmetic.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/conjunction.hpp:
+stan/lib/stan_math/stan/math/prim/meta/apply_scalar_unary.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/is_vector_like.hpp:
 
@@ -4014,7 +4074,25 @@ stan/lib/stan_math/stan/math/prim/meta/is_detected.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/void_t.hpp:
 
+stan/lib/stan_math/stan/math/prim/meta/apply_vector_unary.hpp:
+
 stan/lib/stan_math/stan/math/prim/meta/as_column_vector_or_scalar.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_stan_scalar.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_fvar.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_var.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_var_or_arithmetic.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_container.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/plain_type.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/require_generics.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/as_array_or_scalar.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/child_type.hpp:
 
@@ -4028,8 +4106,6 @@ stan/lib/stan_math/stan/math/prim/meta/error_index.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/forward_as.hpp:
 
-stan/lib/stan_math/stan/math/prim/meta/get.hpp:
-
 stan/lib/stan_math/stan/math/prim/meta/include_summand.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/is_constant.hpp:
@@ -4038,15 +4114,13 @@ stan/lib/stan_math/stan/math/prim/meta/index_type.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/index_apply.hpp:
 
+stan/lib/stan_math/stan/math/prim/meta/is_autodiff.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_double_or_int.hpp:
+
+stan/lib/stan_math/stan/math/prim/meta/is_string_convertible.hpp:
+
 stan/lib/stan_math/stan/math/prim/meta/likely.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/max_size.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/size.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/max_size_mvt.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/size_mvt.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/operands_and_partials.hpp:
 
@@ -4057,8 +4131,6 @@ stan/lib/stan_math/stan/math/prim/meta/promote_scalar_type.hpp:
 stan/lib/stan_math/stan/math/prim/meta/partials_return_type.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/partials_type.hpp:
-
-stan/lib/stan_math/stan/math/prim/meta/plain_type.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/scalar_seq_view.hpp:
 
@@ -4074,7 +4146,9 @@ stan/lib/stan_math/stan/math/prim/meta/VectorBuilderHelper.hpp:
 
 stan/lib/stan_math/stan/math/prim/meta/VectorBuilder.hpp:
 
-stan/lib/stan_math/stan/math/rev/core/build_vari_array.hpp:
+stan/lib/stan_math/stan/math/rev/meta.hpp:
+
+stan/lib/stan_math/stan/math/rev/meta/apply_scalar_unary.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/var.hpp:
 
@@ -4084,11 +4158,37 @@ stan/lib/stan_math/stan/math/rev/core/chainable_alloc.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/chainablestack.hpp:
 
+stan/lib/stan_math/stan/math/rev/core/autodiffstackstorage.hpp:
+
+stan/lib/stan_math/stan/math/memory/stack_alloc.hpp:
+
 stan/lib/stan_math/stan/math/rev/core/grad.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/empty_nested.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/nested_size.hpp:
+
+stan/lib/stan_math/stan/math/rev/meta/is_var.hpp:
+
+stan/lib/stan_math/stan/math/rev/meta/partials_type.hpp:
+
+stan/lib/stan_math/stan/math/rev/meta/operands_and_partials.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/precomputed_gradients.hpp:
+
+stan/lib/stan_math/stan/math/prim/err/check_consistent_sizes.hpp:
+
+stan/lib/stan_math/stan/math/prim/err/check_consistent_size.hpp:
+
+stan/lib/stan_math/stan/math/prim/err/invalid_argument.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/size.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/typedefs.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/build_vari_array.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/count_vars.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/init_chainablestack.hpp:
 
@@ -4128,7 +4228,11 @@ stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/../tbb_config.h:
 
 stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/aligned_space.h:
 
+stan/lib/stan_math/stan/math/rev/core/std_iterator_traits.hpp:
+
 stan/lib/stan_math/stan/math/rev/core/ddv_vari.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/deep_copy_vars.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/dv_vari.hpp:
 
@@ -4138,27 +4242,17 @@ stan/lib/stan_math/stan/math/rev/core/dvv_vari.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/gevv_vvv_vari.hpp:
 
+stan/lib/stan_math/stan/math/rev/core/nested_rev_autodiff.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/recover_memory_nested.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/set_zero_all_adjoints_nested.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/start_nested.hpp:
+
 stan/lib/stan_math/stan/math/rev/core/matrix_vari.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/Eigen_NumTraits.hpp:
-
-stan/lib/stan_math/stan/math/rev/meta.hpp:
-
-stan/lib/stan_math/stan/math/rev/meta/is_var.hpp:
-
-stan/lib/stan_math/stan/math/rev/meta/partials_type.hpp:
-
-stan/lib/stan_math/stan/math/rev/meta/operands_and_partials.hpp:
-
-stan/lib/stan_math/stan/math/rev/core/precomputed_gradients.hpp:
-
-stan/lib/stan_math/stan/math/prim/err/check_consistent_sizes.hpp:
-
-stan/lib/stan_math/stan/math/prim/err/check_consistent_size.hpp:
-
-stan/lib/stan_math/stan/math/prim/err/invalid_argument.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/typedefs.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/std_numeric_limits.hpp:
 
@@ -4171,8 +4265,6 @@ stan/lib/stan_math/stan/math/rev/core/vd_vari.hpp:
 stan/lib/stan_math/stan/math/prim/fun/constants.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/inv.hpp:
-
-stan/lib/stan_math/stan/math/prim/vectorize/apply_scalar_unary.hpp:
 
 stan/lib/stan_math/lib/boost_1.72.0/boost/math/constants/constants.hpp:
 
@@ -5000,6 +5092,18 @@ stan/lib/stan_math/stan/math/rev/core/operator_divide_equal.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/operator_division.hpp:
 
+stan/lib/stan_math/stan/math/prim/core/operator_division.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/std_complex.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/complex_base.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/square.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/operator_multiplication.hpp:
+
+stan/lib/stan_math/stan/math/rev/core/operator_subtraction.hpp:
+
 stan/lib/stan_math/stan/math/rev/core/operator_equal.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/operator_greater_than.hpp:
@@ -5015,10 +5119,6 @@ stan/lib/stan_math/stan/math/rev/core/operator_logical_and.hpp:
 stan/lib/stan_math/stan/math/rev/core/operator_logical_or.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/operator_minus_equal.hpp:
-
-stan/lib/stan_math/stan/math/rev/core/operator_subtraction.hpp:
-
-stan/lib/stan_math/stan/math/rev/core/operator_multiplication.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/operator_multiply_equal.hpp:
 
@@ -5050,13 +5150,7 @@ stan/lib/stan_math/stan/math/rev/core/print_stack.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/recover_memory.hpp:
 
-stan/lib/stan_math/stan/math/rev/core/recover_memory_nested.hpp:
-
 stan/lib/stan_math/stan/math/rev/core/set_zero_all_adjoints.hpp:
-
-stan/lib/stan_math/stan/math/rev/core/set_zero_all_adjoints_nested.hpp:
-
-stan/lib/stan_math/stan/math/rev/core/start_nested.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/std_isinf.hpp:
 
@@ -5074,9 +5168,7 @@ stan/lib/stan_math/stan/math/rev/core/vector_vari.hpp:
 
 stan/lib/stan_math/stan/math/rev/core/vvd_vari.hpp:
 
-stan/lib/stan_math/stan/math/rev/vectorize.hpp:
-
-stan/lib/stan_math/stan/math/rev/vectorize/apply_scalar_unary.hpp:
+stan/lib/stan_math/stan/math/rev/core/save_varis.hpp:
 
 stan/lib/stan_math/stan/math/prim.hpp:
 
@@ -5088,6 +5180,20 @@ stan/lib/stan_math/stan/math/prim/core/init_threadpool_tbb.hpp:
 
 stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/task_scheduler_init.h:
 
+stan/lib/stan_math/stan/math/prim/core/operator_addition.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/operator_equal_equal.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/operator_minus.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/operator_multiplication.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/operator_not_equal.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/operator_plus.hpp:
+
+stan/lib/stan_math/stan/math/prim/core/operator_subtraction.hpp:
+
 stan/lib/stan_math/stan/math/prim/err.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_2F1_converges.hpp:
@@ -5098,13 +5204,23 @@ stan/lib/stan_math/stan/math/prim/err/throw_domain_error.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/throw_domain_error_vec.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/get.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/value_of_rec.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/fabs.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/floor.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/is_nonpositive_integer.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_3F2_converges.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_bounded.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/max_size.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/size_zero.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_cholesky_factor.hpp:
 
@@ -5128,11 +5244,15 @@ stan/lib/stan_math/stan/math/prim/err/constraint_tolerance.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/abs.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/hypot.hpp:
+
 stan/lib/stan_math/stan/math/prim/err/check_column_index.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/out_of_range.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_consistent_size_mvt.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/size_mvt.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_consistent_sizes_mvt.hpp:
 
@@ -5248,9 +5368,13 @@ stan/lib/stan_math/stan/math/prim/err/check_std_vector_index.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/check_vector.hpp:
 
+stan/lib/stan_math/stan/math/prim/err/check_vector_index.hpp:
+
 stan/lib/stan_math/stan/math/prim/err/domain_error.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/domain_error_vec.hpp:
+
+stan/lib/stan_math/stan/math/prim/err/elementwise_check.hpp:
 
 stan/lib/stan_math/stan/math/prim/err/invalid_argument_vec.hpp:
 
@@ -5302,6 +5426,32 @@ stan/lib/stan_math/stan/math/prim/fun/accumulator.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/acos.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/asin.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/asinh.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/arg.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/copysign.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/isfinite.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/isinf.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/isnan.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/polar.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/cos.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/cosh.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/exp.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/i_times.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/sqrt.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/acosh.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/add.hpp:
@@ -5325,10 +5475,6 @@ stan/lib/stan_math/stan/math/prim/fun/array_builder.hpp:
 stan/lib/stan_math/stan/math/prim/fun/promote_elements.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/as_bool.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/asin.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/asinh.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/atan.hpp:
 
@@ -5496,11 +5642,17 @@ stan/lib/stan_math/stan/math/prim/fun/log1p.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/binomial_coefficient_log.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/multiply_log.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/block.hpp:
+stan/lib/stan_math/stan/math/prim/fun/digamma.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/boost_policy.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/lbeta.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/lgamma_stirling_diff.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/lgamma_stirling.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/block.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/cbrt.hpp:
 
@@ -5516,17 +5668,13 @@ stan/lib/stan_math/stan/math/prim/fun/mdivide_left_tri_low.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/mdivide_left_tri.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/promote_common.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/common_type.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/inv_square.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/square.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/cholesky_corr_constrain.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/corr_constrain.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/tanh.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/cholesky_corr_free.hpp:
 
@@ -5558,15 +5706,13 @@ stan/lib/stan_math/stan/math/prim/fun/columns_dot_product.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/columns_dot_self.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/constant_vector.hpp:
+stan/lib/stan_math/stan/math/prim/fun/conj.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/corr_matrix_constrain.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/read_corr_matrix.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/read_corr_L.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/sqrt.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/multiply_lower_tri_self_transpose.hpp:
 
@@ -5578,21 +5724,13 @@ stan/lib/stan_math/stan/math/prim/fun/factor_cov_matrix.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/factor_U.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/cos.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/cosh.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/cov_exp_quad.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/gp_exp_quad_cov.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/divide_columns.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/divide.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/squared_distance.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/exp.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/cov_matrix_constrain.hpp:
 
@@ -5636,9 +5774,9 @@ stan/lib/stan_math/stan/math/prim/fun/diag_pre_multiply.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/diagonal.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/digamma.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/distance.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/divide.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/dot.hpp:
 
@@ -5660,8 +5798,6 @@ stan/lib/stan_math/stan/math/prim/fun/expm1.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/F32.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/fabs.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/falling_factorial.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/fdim.hpp:
@@ -5669,8 +5805,6 @@ stan/lib/stan_math/stan/math/prim/fun/fdim.hpp:
 stan/lib/stan_math/stan/math/prim/fun/fill.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/finite_diff_stepsize.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/floor.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/fma.hpp:
 
@@ -5698,6 +5832,10 @@ stan/lib/stan_math/stan/math/prim/fun/gp_matern52_cov.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/gp_periodic_cov.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/sin.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/sinh.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/grad_2F1.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/grad_F32.hpp:
@@ -5710,13 +5848,13 @@ stan/lib/stan_math/stan/math/prim/fun/grad_reg_inc_beta.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/grad_reg_inc_gamma.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/multiply_log.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/grad_reg_lower_inc_gamma.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/tgamma.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/head.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/hypot.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/identity_constrain.hpp:
 
@@ -5725,6 +5863,8 @@ stan/lib/stan_math/stan/math/prim/fun/identity_free.hpp:
 stan/lib/stan_math/stan/math/prim/fun/identity_matrix.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/if_else.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/imag.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/initialize.hpp:
 
@@ -5746,17 +5886,25 @@ stan/lib/stan_math/stan/math/prim/fun/inverse_softmax.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/inverse_spd.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/isnormal.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/is_uninitialized.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/lb_constrain.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/lb_free.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/lbeta.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/ldexp.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/linspaced_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/linspaced_row_vector.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/linspaced_vector.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/lmgamma.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/logb.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/log10.hpp:
 
@@ -5838,6 +5986,8 @@ stan/lib/stan_math/stan/math/prim/fun/matrix_power.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/max.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/max_size_mvt.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/mdivide_left.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/mdivide_left_ldlt.hpp:
@@ -5868,13 +6018,27 @@ stan/lib/stan_math/stan/math/prim/fun/modulus.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/multiply.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/norm.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/num_elements.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/offset_multiplier_constrain.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/offset_multiplier_free.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/one_hot_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/one_hot_int_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/one_hot_row_vector.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/one_hot_vector.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/ones_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/ones_int_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/ones_row_vector.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/ones_vector.hpp:
 
@@ -5894,6 +6058,8 @@ stan/lib/stan_math/stan/math/prim/fun/positive_ordered_constrain.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/positive_ordered_free.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/pow.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/primitive_value.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/prob_constrain.hpp:
@@ -5901,6 +6067,8 @@ stan/lib/stan_math/stan/math/prim/fun/prob_constrain.hpp:
 stan/lib/stan_math/stan/math/prim/fun/prob_free.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/prod.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/proj.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/promote_scalar.hpp:
 
@@ -5920,6 +6088,8 @@ stan/lib/stan_math/stan/math/prim/fun/quad_form_sym.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/rank.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/real.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/rep_array.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/rep_matrix.hpp:
@@ -5927,6 +6097,8 @@ stan/lib/stan_math/stan/math/prim/fun/rep_matrix.hpp:
 stan/lib/stan_math/stan/math/prim/fun/rep_row_vector.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/rep_vector.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/reverse.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/rising_factorial.hpp:
 
@@ -5940,6 +6112,8 @@ stan/lib/stan_math/stan/math/prim/fun/rows_dot_product.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/rows_dot_self.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/scalbn.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/scale_matrix_exp_multiply.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/scaled_add.hpp:
@@ -5948,21 +6122,15 @@ stan/lib/stan_math/stan/math/prim/fun/sd.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/segment.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/set_spaced_vector.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/sign.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/signbit.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/simplex_constrain.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/simplex_free.hpp:
 
-stan/lib/stan_math/stan/math/prim/fun/sin.hpp:
-
 stan/lib/stan_math/stan/math/prim/fun/singular_values.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/sinh.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/size_zero.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/softmax.hpp:
 
@@ -5989,8 +6157,6 @@ stan/lib/stan_math/stan/math/prim/fun/subtract.hpp:
 stan/lib/stan_math/stan/math/prim/fun/tail.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/tan.hpp:
-
-stan/lib/stan_math/stan/math/prim/fun/tanh.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/to_array_1d.hpp:
 
@@ -6026,9 +6192,17 @@ stan/lib/stan_math/stan/math/prim/fun/welford_covar_estimator.hpp:
 
 stan/lib/stan_math/stan/math/prim/fun/welford_var_estimator.hpp:
 
+stan/lib/stan_math/stan/math/prim/fun/zeros_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/zeros_int_array.hpp:
+
+stan/lib/stan_math/stan/math/prim/fun/zeros_row_vector.hpp:
+
 stan/lib/stan_math/stan/math/prim/fun/zeros_vector.hpp:
 
 stan/lib/stan_math/stan/math/prim/functor.hpp:
+
+stan/lib/stan_math/stan/math/prim/functor/apply.hpp:
 
 stan/lib/stan_math/stan/math/prim/functor/coupled_ode_observer.hpp:
 
@@ -7674,6 +7848,16 @@ stan/lib/stan_math/stan/math/prim/functor/mpi_command.hpp:
 
 stan/lib/stan_math/stan/math/prim/functor/mpi_distributed_apply.hpp:
 
+stan/lib/stan_math/stan/math/prim/functor/reduce_sum.hpp:
+
+stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/parallel_reduce.h:
+
+stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/partitioner.h:
+
+stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/blocked_range.h:
+
+stan/lib/stan_math/stan/math/prim/functor/reduce_sum_static.hpp:
+
 stan/lib/stan_math/stan/math/prim/prob.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/bernoulli_ccdf_log.hpp:
@@ -7875,6 +8059,22 @@ stan/lib/stan_math/stan/math/prim/prob/dirichlet_lpdf.hpp:
 stan/lib/stan_math/stan/math/prim/prob/dirichlet_lpmf.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/dirichlet_rng.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_ccdf_log.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_lccdf.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_cdf.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_cdf_log.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_lcdf.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_log.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_lpmf.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/discrete_range_rng.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/double_exponential_ccdf_log.hpp:
 
@@ -8160,8 +8360,6 @@ stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_lpmf.hpp:
 
-stan/lib/stan_math/stan/math/prim/prob/poisson_lpmf.hpp:
-
 stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_glm_log.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_glm_lpmf.hpp:
@@ -8169,8 +8367,6 @@ stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_glm_lpmf.hpp:
 stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_log.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_lpmf.hpp:
-
-stan/lib/stan_math/stan/math/prim/prob/poisson_log_lpmf.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/neg_binomial_2_log_rng.hpp:
 
@@ -8272,11 +8468,15 @@ stan/lib/stan_math/stan/math/prim/prob/poisson_lcdf.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/poisson_log.hpp:
 
+stan/lib/stan_math/stan/math/prim/prob/poisson_lpmf.hpp:
+
 stan/lib/stan_math/stan/math/prim/prob/poisson_log_glm_log.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/poisson_log_glm_lpmf.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/poisson_log_log.hpp:
+
+stan/lib/stan_math/stan/math/prim/prob/poisson_log_lpmf.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/poisson_log_rng.hpp:
 
@@ -8408,8 +8608,6 @@ stan/lib/stan_math/stan/math/prim/prob/wishart_log.hpp:
 
 stan/lib/stan_math/stan/math/prim/prob/wishart_lpdf.hpp:
 
-stan/lib/stan_math/stan/math/prim/vectorize.hpp:
-
 stan/lib/stan_math/stan/math/rev/fun.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/LDLT_alloc.hpp:
@@ -8424,19 +8622,45 @@ stan/lib/stan_math/stan/math/rev/fun/abs.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/fabs.hpp:
 
+stan/lib/stan_math/stan/math/rev/fun/hypot.hpp:
+
 stan/lib/stan_math/stan/math/rev/fun/acos.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/acosh.hpp:
+stan/lib/stan_math/stan/math/rev/fun/arg.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/as_bool.hpp:
+stan/lib/stan_math/stan/math/rev/fun/atan2.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/asin.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/asinh.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/atan.hpp:
+stan/lib/stan_math/stan/math/rev/fun/value_of_rec.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/atan2.hpp:
+stan/lib/stan_math/stan/math/rev/fun/cosh.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/exp.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/is_inf.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/is_nan.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/sin.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/sinh.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/log.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/cos.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/sqrt.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/polar.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/acosh.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/as_bool.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/atan.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/atanh.hpp:
 
@@ -8448,15 +8672,11 @@ stan/lib/stan_math/stan/math/rev/fun/beta.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/binary_log_loss.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/calculate_chain.hpp:
-
 stan/lib/stan_math/stan/math/rev/fun/cbrt.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/ceil.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/cholesky_decompose.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/value_of_rec.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/value_of.hpp:
 
@@ -8468,17 +8688,11 @@ stan/lib/stan_math/stan/math/rev/fun/columns_dot_self.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/dot_self.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/cos.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/cosh.hpp:
+stan/lib/stan_math/stan/math/rev/fun/conj.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/cov_exp_quad.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/gp_exp_quad_cov.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/crossprod.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/tcrossprod.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/determinant.hpp:
 
@@ -8491,8 +8705,6 @@ stan/lib/stan_math/stan/math/rev/fun/to_var.hpp:
 stan/lib/stan_math/stan/math/rev/fun/erf.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/erfc.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/exp.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/exp2.hpp:
 
@@ -8507,8 +8719,6 @@ stan/lib/stan_math/stan/math/rev/fun/floor.hpp:
 stan/lib/stan_math/stan/math/rev/fun/fma.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/fmax.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/is_nan.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/fmin.hpp:
 
@@ -8534,17 +8744,11 @@ stan/lib/stan_math/stan/math/rev/fun/inv_sqrt.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/inv_square.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/sqrt.hpp:
-
 stan/lib/stan_math/stan/math/rev/fun/square.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/lgamma.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/log.hpp:
-
 stan/lib/stan_math/stan/math/rev/fun/log1m.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/hypot.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/if_else.hpp:
 
@@ -8557,8 +8761,6 @@ stan/lib/stan_math/stan/math/rev/fun/inv_cloglog.hpp:
 stan/lib/stan_math/stan/math/rev/fun/inv_logit.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/inverse.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/is_inf.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/is_uninitialized.hpp:
 
@@ -8626,6 +8828,8 @@ stan/lib/stan_math/stan/math/rev/fun/multiply_log.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/multiply_lower_tri_self_transpose.hpp:
 
+stan/lib/stan_math/stan/math/rev/fun/norm.hpp:
+
 stan/lib/stan_math/stan/math/rev/fun/ordered_constrain.hpp:
 
 stan/lib/stan_math/stan/math/rev/functor/adj_jac_apply.hpp:
@@ -8635,6 +8839,8 @@ stan/lib/stan_math/stan/math/rev/fun/owens_t.hpp:
 stan/lib/stan_math/stan/math/rev/fun/positive_ordered_constrain.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/primitive_value.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/proj.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/quad_form.hpp:
 
@@ -8650,10 +8856,6 @@ stan/lib/stan_math/stan/math/rev/fun/sd.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/simplex_constrain.hpp:
 
-stan/lib/stan_math/stan/math/rev/fun/sin.hpp:
-
-stan/lib/stan_math/stan/math/rev/fun/sinh.hpp:
-
 stan/lib/stan_math/stan/math/rev/fun/softmax.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/squared_distance.hpp:
@@ -8667,6 +8869,8 @@ stan/lib/stan_math/stan/math/rev/fun/sum.hpp:
 stan/lib/stan_math/stan/math/rev/fun/tan.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/tanh.hpp:
+
+stan/lib/stan_math/stan/math/rev/fun/tcrossprod.hpp:
 
 stan/lib/stan_math/stan/math/rev/fun/tgamma.hpp:
 
@@ -8694,31 +8898,31 @@ stan/lib/stan_math/stan/math/rev/functor/jacobian.hpp:
 
 stan/lib/stan_math/stan/math/rev/functor/kinsol_data.hpp:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/kinsol/kinsol.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/kinsol/kinsol.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_nvector.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_nvector.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_types.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_types.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_config.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_config.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/kinsol/kinsol_ls.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/kinsol/kinsol_ls.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_direct.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_direct.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_iterative.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_iterative.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_linearsolver.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_linearsolver.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_matrix.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_matrix.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sunmatrix/sunmatrix_dense.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sunmatrix/sunmatrix_dense.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sunlinsol/sunlinsol_dense.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sunlinsol/sunlinsol_dense.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_dense.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_dense.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/nvector/nvector_serial.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/nvector/nvector_serial.h:
 
 stan/lib/stan_math/stan/math/rev/functor/algebra_solver_powell.hpp:
 
@@ -8760,11 +8964,11 @@ stan/lib/stan_math/stan/math/rev/functor/cvodes_integrator.hpp:
 
 stan/lib/stan_math/stan/math/rev/functor/cvodes_utils.hpp:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/cvodes/cvodes.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/cvodes/cvodes.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/sundials/sundials_nonlinearsolver.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/sundials/sundials_nonlinearsolver.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/cvodes/cvodes_ls.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/cvodes/cvodes_ls.h:
 
 stan/lib/stan_math/stan/math/rev/functor/cvodes_ode_data.hpp:
 
@@ -8778,9 +8982,9 @@ stan/lib/stan_math/stan/math/rev/functor/idas_forward_system.hpp:
 
 stan/lib/stan_math/stan/math/rev/functor/idas_system.hpp:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/idas/idas.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/idas/idas.h:
 
-stan/lib/stan_math/lib/sundials_4.1.0/include/idas/idas_ls.h:
+stan/lib/stan_math/lib/sundials_5.2.0/include/idas/idas_ls.h:
 
 stan/lib/stan_math/stan/math/rev/functor/idas_integrator.hpp:
 
@@ -8792,15 +8996,13 @@ stan/lib/stan_math/stan/math/rev/functor/map_rect_concurrent.hpp:
 
 stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/parallel_for.h:
 
-stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/partitioner.h:
-
-stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/blocked_range.h:
-
 stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/_tbb_trace_impl.h:
 
 stan/lib/stan_math/lib/tbb_2019_U8/include/tbb/internal/../tbb_profiling.h:
 
 stan/lib/stan_math/stan/math/rev/functor/map_rect_reduce.hpp:
+
+stan/lib/stan_math/stan/math/rev/functor/reduce_sum.hpp:
 
 stan/src/stan/io/cmd_line.hpp:
 
@@ -9092,7 +9294,107 @@ src/cmdstan/arguments/arg_random.hpp:
 
 src/cmdstan/arguments/arg_seed.hpp:
 
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_types.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_clock.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/c_time.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/compiler_config.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/locale_config.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/config/auto_link.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/microsec_time_clock.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/ptime.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_system.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_config.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_duration.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/special_defs.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_defs.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_resolution_traits.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/int_adapter.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/gregorian_types.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/year_month_day.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/period.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_calendar.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_weekday.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/constrained_value.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_defs.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day_of_year.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.ipp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_ymd.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_year.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_month.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration_types.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration_types.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_date.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/adjust_functors.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/wrapping_int.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_generators.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_clock_device.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_iterator.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_split.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_counted.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/date_duration_operators.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_duration.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/time_period.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_iterator.hpp:
+
+stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/dst_rules.hpp:
+
 src/cmdstan/write_model.hpp:
+
+src/cmdstan/write_opencl_device.hpp:
+
+src/cmdstan/write_parallel_info.hpp:
 
 src/cmdstan/write_stan.hpp:
 
@@ -9479,101 +9781,3 @@ stan/src/stan/variational/base_family.hpp:
 stan/src/stan/variational/families/normal_meanfield.hpp:
 
 stan/src/stan/services/experimental/advi/meanfield.hpp:
-
-stan/lib/stan_math/stan/math/opencl/opencl_context.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_types.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_clock.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/c_time.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/compiler_config.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/locale_config.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/config/auto_link.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/microsec_time_clock.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/ptime.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_system.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_config.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_duration.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/special_defs.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_defs.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_resolution_traits.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/int_adapter.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/gregorian_types.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/year_month_day.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/period.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_calendar.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_weekday.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/constrained_value.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_defs.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day_of_year.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian_calendar.ipp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_ymd.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_day.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_year.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_month.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_duration_types.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_duration_types.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/gregorian/greg_date.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/adjust_functors.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/wrapping_int.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_generators.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_clock_device.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/date_iterator.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_split.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_system_counted.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/date_duration_operators.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/posix_time_duration.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/posix_time/time_period.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/time_iterator.hpp:
-
-stan/lib/stan_math/lib/boost_1.72.0/boost/date_time/dst_rules.hpp:
