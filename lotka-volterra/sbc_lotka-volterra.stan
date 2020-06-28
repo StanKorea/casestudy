@@ -70,7 +70,7 @@ model {
 }
 
 generated quantities {
-	int <lower = 0, upper = 1> It_sim[8]  
+	int <lower = 0, upper = 1> I_lt_sim[8]  
 		= {theta[1] < theta_sim[1], theta[2] < theta_sim[2], theta[3] < theta_sim[3], theta[4] < theta_sim[4], 
 		   z_init[1] < z_init_sim[1], z_init[2] < z_init_sim[2], sigma[1] < sigma_sim[1], sigma[2] < sigma_sim[2]};
 
