@@ -55,7 +55,7 @@ parameters {
 }
 
 transformed parameters {
-  real <lower = 0> z_tmp[N, 2]
+  real z_tmp[N, 2]
     = integrate_ode_rk45(dz_dt, z_init, 0, ts, theta, 
                         rep_array(0.0, 0), rep_array(0, 0), 1e-5, 1e-3, 5e2);
   real <lower = 0> z[N, 2];
