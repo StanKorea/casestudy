@@ -61,7 +61,7 @@ transformed parameters {
   real <lower = 0> z[N, 2];
   for (i in 1:N){
     for (j in 1:2){
-      z[i,j] = z_tmp[i,j] + 1e-6;
+      z[i,j] = z_tmp[i,j] + 1e-3;
     }
   }
 }
